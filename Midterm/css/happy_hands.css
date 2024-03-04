@@ -1,0 +1,179 @@
+/*The following CSS styles the text*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../images/merry-go-round-kids.gif") no-repeat;
+  height: 100%;
+  background-size: cover;
+  line-height: 1.3rem;
+}
+body h1 {
+  margin-left: 20px;
+}
+body p {
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+#pageContainer {
+  display: grid;
+  gap: 0;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, auto);
+  width: 80%;
+  max-width: auto;
+  margin: auto;
+  min-height: 100%;
+  background-color: hsl(143, 52%, 61%);
+  border: black solid 4px;
+  border-radius: 8px;
+}
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/7;
+  background-color: hsl(350, 52%, 64%);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+button {
+  display: block;
+  height: 30px;
+  width: 30px;
+  float: right;
+  background-color: #08ecec;
+}
+
+main {
+  grid-row: 4/5;
+  grid-column: 2/5;
+}
+main ul li {
+  margin-left: 50px;
+}
+main h2 {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+main h3 {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+main h4 {
+  margin-left: 20px;
+}
+
+aside {
+  grid-row: 4/5;
+  grid-column: 5/7;
+  background-color: rgba(173, 216, 230, 0.4509803922);
+}
+aside h3 {
+  margin-left: 20px;
+}
+aside ol li {
+  margin-left: 30px;
+}
+
+footer {
+  font-weight: bold;
+  grid-row: 5/6;
+  grid-column: 1/7;
+  background-color: hsl(350, 52%, 64%);
+  padding: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+nav {
+  grid-row: 2/3;
+  grid-column: 1/7;
+  background-color: #f8f3f3;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  padding-top: 15px;
+  padding: 25px;
+}
+nav li a {
+  color: black;
+}
+nav li a:hover {
+  color: hsl(0, 91%, 36%);
+}
+
+img {
+  border: 5px solid pink;
+  border-radius: 4px;
+  width: 300px;
+  height: 300px;
+  filter: grayscale(88%);
+}
+
+li ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #pageContainer {
+    display: grid;
+    grid-template-columns: 1/2;
+    width: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(143, 52%, 61%);
+  }
+  button {
+    display: block;
+    height: 30px;
+    width: 30px;
+    float: right;
+    background-color: #08ecec;
+  }
+  header {
+    justify-content: space-between;
+    position: sticky;
+    grid-column: 1/2;
+  }
+  nav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+    background-color: #f8f3f3;
+  }
+  main {
+    grid-column: 1/2;
+  }
+  img {
+    position: sticky;
+    grid-column: 1/2;
+  }
+  aside {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: #add8e6;
+  }
+  footer {
+    position: sticky;
+    grid-row: 6/7;
+    grid-column: 1/2;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=happy_hands.css.map */

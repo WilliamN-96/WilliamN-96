@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Page for Happy Hands Daycare</title>
+<meta charset="UFT-8">
+<meta name="description" content="Contact page for happy hands daycare">
+<meta name="keywords" content="contact us, happy hands daycare, child care, child education">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/happy_hands.css">
+<script src="happy_hands.js"></script>
+</head>
+<body>
+<div id="pageContainer">
+
+<header><h1>Contact Us</h1> 
+	<button type="button" id="navButton" class="menuDrop" onclick="mobileNav()">+</button>
+</header>
+
+<nav>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about_us.html">About Us</a></li>
+	<li><a href="accreditation.html">Accreditation</a></li>
+	<li><a href="schedule.html">Scheduling</a></li>
+	<li><a href="contact_us.html" target="_blank">Contact Us</a></li>
+</ul>
+
+</nav>
+
+<main>
+<img src="images/contact-us.jpg">
+<form method="post" action="form_response_basic-1.php">
+<legend>Contact Us!</legend>
+
+<p>Fill out the boxes below so we may contact you back.</p>
+<label>First name :</label>
+<input type="text" name="firstname" id="first_name" placeholder="Thomas"><br>
+<label>Last Name :</label>
+<input type="text" name="lastname" id="last_name" placeholder="Johnson"><br>
+<br>
+<label>Email Address</label>
+<input type="email" name="email" id="email_input" placeholder="yourcontact@email.com">
+
+
+<p>Please choose the subject you are questioning over.</p>
+<select id="subject_choice" name="subjects">
+	<option value="adoption">Pick Up</option>
+	<option value="donation">Drop Off</option>
+	<option value="volunteer">Jobs</option>
+	<option value="general_questioning">General Questioning</option>
+</select>
+
+<p>Please type your question in the box below</p>
+<textarea name="message" id="question_input" rows="10" cols="50"></textarea>
+<br>
+
+<input type="submit" class="contactButton" value="submit">
+<input type="reset" class="contactButton" value="reset">
+</main>
+
+<footer>Our Location: 3450 Regency Lane Carmel, Indiana 62704
+	<em>This site was made for a class project</em>
+</footer>
+
+</div>
+</body>
+</html>
