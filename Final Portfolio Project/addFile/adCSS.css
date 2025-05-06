@@ -1,0 +1,39 @@
+.adContainer{
+    text-shadow: 1px 1px 3px whitesmoke;
+    position:absolute;
+    border:2px black solid;
+    background-color: rgb(192, 128, 54);
+    text-align: center;
+    margin: 0.5em;
+    padding:5px;
+    width:auto;
+    text-decoration:underline;
+    animation-name: rise;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.adContainer p{
+    font-weight: bold;
+}
+
+.adContainer button{
+    background-color: rgb(194, 190, 190);
+    font-weight: bold;
+}
+
+@keyframes rise{
+    0%{transform: translatey(0px)}
+    70%{transform: translateY(550px)}
+    80%{transform: translateY(550px)}
+    80%{transform: translateY(550px)}
+    100%{transform: translateY(550px)}
+    
+}
+
+@media only screen and (max-width:1080px){
+    div{
+        margin:0;
+    }
+}
